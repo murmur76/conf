@@ -110,9 +110,9 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1537 111 445 103 0 0 2048 1152 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>1015 322 924 485 0 0 2048 1152 </string>
+	<string>811 268 924 485 0 0 2048 1129 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 668 570 451 0 0 2048 1129 </string>
+	<string>0 666 570 426 0 0 2048 1129 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -678,9 +678,9 @@
 			<key>Screen</key>
 			<integer>-1</integer>
 			<key>Scrollback Lines</key>
-			<integer>1000</integer>
+			<integer>0</integer>
 			<key>Scrollback With Status Bar</key>
-			<false/>
+			<true/>
 			<key>Scrollback in Alternate Screen</key>
 			<true/>
 			<key>Selected Text Color</key>
@@ -822,7 +822,7 @@
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
-			<false/>
+			<true/>
 			<key>Use Bold Font</key>
 			<true/>
 			<key>Use Bright Bold</key>
@@ -1569,7 +1569,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>473833603.04078901</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>473833603.04111701</real>
+	<real>473920542.60370898</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1632,7 +1632,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-01-07T04:23:59Z</date>
+	<date>2016-01-08T04:32:48Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
