@@ -4,8 +4,7 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" alternatively, pass a path where Vundle should install plugins "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
@@ -21,6 +20,8 @@ Plugin 'kongo2002/fsharp-vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'pangloss/vim-javascript'
 Plugin 'isRuslan/vim-es6' 
+Plugin 'chriskempson/base16-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -40,17 +41,21 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let base16colorspace=256  " Access colors present in 256 colorspace
+
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 
 set shiftwidth=2
 set tabstop=2
 set expandtab
-syntax on "
-set hlsearch "
-set ruler "
+syntax on
+set hlsearch
+set ruler
 set autoindent
-set smartindent "
-filetype indent on "
+set smartindent
+filetype indent on
 set incsearch
 set title
-
+colorscheme base16-ocean
+highlight Comment cterm=italic gui=italic
