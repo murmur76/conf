@@ -18,7 +18,7 @@ export NVM_DIR="$HOME/.nvm"
 
 alias vi="/usr/local/Cellar/macvim/8.0-136/bin/mvim -v"
 alias vim="/usr/local/Cellar/macvim/8.0-136/bin/mvim -v"
-alias mvim="/usr/local/Cellar/macvim/8.0-136/bin/mvim"
+alias mvim="open -a MacVim"
 
 BASE16_SHELL=$HOME/.config/base16-shell/
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
