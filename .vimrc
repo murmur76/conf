@@ -19,28 +19,29 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'kongo2002/fsharp-vim'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'chriskempson/base16-vim'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'posva/vim-vue'
-Plugin 'Quramy/tsuquyomi'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'chriskempson/base16-vim'
+
+call vundle#end()            " required
+syntax on
+filetype plugin indent on
 
 set autoread
 set wildmenu
 set shiftwidth=2
 set tabstop=2
 set expandtab
-syntax on
 set hlsearch
 set smartcase
 set ignorecase
 set ruler
 set autoindent
 set smartindent
-filetype indent on
 set incsearch
 set title
 set showmatch 
@@ -51,6 +52,19 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+" " Properly disable sound on errors on MacVim
+if has("gui_macvim")
+  autocmd GUIEnter * set vb t_vb=
+endif
+
+set guifont=Fira\ Code\ Regular:h12
+highlight Comment cterm=italic gui=italic
+
+if filereadable(expand("~/.vimrc_background"))
+  let base16colorspace=256
+  source ~/.vimrc_background
+endif
 
 " Smart way to move between windows
 map <C-j> <C-W>j
